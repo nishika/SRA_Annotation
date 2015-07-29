@@ -5,7 +5,7 @@ library(rtracklayer)
 library(magrittr)
 library(stringr)
 
-metadata <- load('/home/other/nkarbhar/sratissue/meta.Rda')   #this contains the annotated metadata for the 500 big wig files. 
+metadata <- load('/home/other/nkarbhar/sratissue/meta.Rda')   #this contains the annotated metadata for the 500 bigWig files. 
 extract.block <- function(files, chr, start, end, verbose = FALSE){  #extract.block function was provided by Jean-Phillipe Fortin. Thank you Jean-Philippe Fortin!
   rl <- IRanges::RangesList(IRanges::IRanges(start=start, end=end))
   names(rl) <- chr
